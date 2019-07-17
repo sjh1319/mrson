@@ -84,7 +84,9 @@ if(id!=null){
 <input type="button" value="글수정" class="btn" 
  onclick="location.href='updateForm.jsp?num=<%=num%>&pageNum=<%=pageNum%>'">
  <input type="button" value="글삭제" class="btn" 
- onclick="location.href='deleteForm.jsp?num=<%=num%>&pageNum=<%=pageNum%>'">		
+ onclick="location.href='deleteForm.jsp?num=<%=num%>&pageNum=<%=pageNum%>'">
+ <input type="button" value="답글쓰기" 
+    onclick="location.href='reWriteForm.jsp?num=<%=bb.getNum()%>&re_ref=<%=bb.getRe_ref()%>&re_lev=<%=bb.getRe_lev() %>&re_seq=<%=bb.getRe_seq()%>'">		
 		<%
 	}
 }

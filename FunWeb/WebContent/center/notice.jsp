@@ -95,7 +95,17 @@
 				<tr
 					onclick="location.href='content.jsp?num=<%=bb.getNum()%>&pageNum=<%=pageNum%>'">
 					<td><%=num--%></td>
-					<td class="left"><%=bb.getSubject()%></td>
+					<td class="left">
+					<% if (bb.getRe_lev()>0) {
+													
+					%>
+					<img src="../images/center/level.gif">
+					<img src="../images/center/re.gif">						
+					<% 
+					} 
+						%>
+					
+					<%=bb.getSubject()%></td>
 					<td><%=bb.getName()%></td>
 					<td><%=sdf.format(bb.getDate())%></td>
 					<td><%=bb.getReadcount()%></td>
